@@ -1,0 +1,179 @@
+@import "media/media-screen";
+
+.main{    
+    position: relative;
+    padding: 10px;
+    background: $color-negro;
+    color: $color-blanco; 
+    text-align: left;
+    box-shadow: 2px -1px 11px 7px rgba(255,255,255,0.52);
+    -webkit-box-shadow: 2px -1px 11px 7px rgba(255,255,255,0.52);
+    -moz-box-shadow: 2px -1px 11px 7px rgba(255,255,255,0.52);
+    
+    @include tablet{
+      margin-top: 10px;
+    }
+
+    .works{
+        height: auto;
+    }
+
+
+    /*Titulos*/
+   
+      .title{  
+        font-family: $fuente-titulo;
+          color: $color-verde;
+          font-size: 1.3em;
+      
+    }
+  
+      a{
+        text-decoration: none;
+        color: $color-verde;
+      }
+
+                                                /**********BEM**********/
+      .main__h2{
+        .main__h2--color{
+          color: rgb(241, 241, 241);    
+        }
+
+      }
+      
+
+      .front{
+        text-align: left;
+        margin: auto;   
+      }
+
+                                                 /**********BEM**********/         
+      /***Tabla-About***/
+        .table--background{
+          background: $color-gris;
+
+          .tr--color{
+            color: $color-negro;
+
+          
+            .table__td--font-weight{
+              font-weight: bold;
+            }
+
+          }
+
+          
+      
+
+      }
+
+                                                /**********BEM**********/
+      /***Skills***/
+      .lenguaje--font{
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 20px;
+
+
+        .lenguaje__font--color{
+          color: $color-gris ;
+        }
+
+      }
+
+    
+      /***Grid-works***/
+
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 0;
+        background-color: #71a9f348;
+        padding: 0;
+
+        div {
+            background-color: $bg-table;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+            height: 20vh;
+
+            .item1 { 
+                grid-area: 1 / 3 / 2 / 4; 
+              background-image: url("../../img/site1.png");
+              background-size: cover;
+              }
+            .item2 { 
+                grid-area: 2 / 3 / 3 / 4;
+                background-image: url("../../img/site2.png");
+                background-size: cover;
+              }
+            .item3 { 
+                grid-area: 1 / 1 / 2 / 2; 
+                background-image: url("../../img/site3.png");
+                background-size: cover;
+              }
+            .item4 { 
+                grid-area: 1 / 2 / 2 / 3; 
+                background-image: url("../../img/sites4.png");
+                background-size: cover;
+              }
+            .item5 {
+                 grid-area: 2 / 1 / 3 / 2;
+                 background-image: url("../../img/sites5.png");
+                 background-size: cover;
+               }
+            .item6 { 
+                grid-area: 2 / 2 / 3 / 3; 
+                background-image: url("../../img/sites6.png");
+                background-size: cover;
+              }
+          
+              .item7 { 
+                  grid-area: 3 / 1 / 4 / 2; 
+                background-image: url("../../img/site1.png");
+                background-size: cover;
+                }
+              .item8 { 
+                  grid-area: 3 / 2 / 4 / 3;
+                  background-image: url("../../img/site2.png");
+                  background-size: cover;
+                }
+              .item9 { 
+                  grid-area: 3 / 3 / 4 / 4; 
+                  background-image: url("../../img/site3.png");
+                  background-size: cover;
+                }
+          
+          }
+
+          
+
+      }
+                                                 /**********BEM**********/             
+
+      form{
+        text-align: center;
+
+
+        .form__input--padding{
+          padding: .3em 1em;
+        }
+
+        #btn-submit{
+          background: $color-verde;
+        }
+
+        
+          #msg{
+            width: 350px;
+            height: 200px;                
+          
+            @include phone{
+              width: 350px;
+              height: 100px;
+            }
+          }
+    }
+
+}

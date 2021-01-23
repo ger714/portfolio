@@ -1,0 +1,21 @@
+/*Footer*/
+footer{
+    position: fixed;
+    bottom: 0;
+    background: $color-negro;
+    text-align: center;
+    width: 100%;
+    color: $color-blanco;
+
+    .content-footer{
+        padding: 15px;
+
+       
+    }
+    
+    #copy{
+        margin-top: 10px;
+
+    }
+    
+}
